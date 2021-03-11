@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: justify;
+}
+
+.interline {
+    width: 75vw;
+    border-top: 2px solid #1EA69A;
+    margin: 25px auto;
+}
+
+/* header */
+
+#headwrap {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    background-color: rgba(212,212,212,0.5);
+    background-image: url(assets/city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 100px;
+    border-radius: 10px;
+}
+
+header > a {
+    text-decoration: none;
+    border: 2px solid #1EA69A;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #1EA69A;
+}
+header > a:active {
+    background-color: #1EA69A;
+    color: white;
+}
+header > a > img {
+    height: 16px;
+}
+
+/* nav */
+
+nav {
+    display: inline-block;
+    margin-left: 10vw;
+    padding: 15px;
+}
+nav > ol > li > a {
+    text-decoration: none;
+    color: #1EA69A;
+}
+
+/* intro */
+
+#preface {
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 25px;
+}
+#preface > p {
+    line-height: 1.5;
+}
+#preface > img {
+    float: right;
+    height: 150px;
+    margin-left: 50px;
+}
+
+/* description */
+
+#description {
+    width: 80vw;
+    margin: auto;
+}
+#description > p {
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+#description > p::first-letter {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* vidéo locale */
+
+#localvid {
+    height: 350px;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* démographie */
+
+#demograph {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+#demograph > table {
+    margin: auto;
+    width: 75%;
+    border-collapse: collapse;
+    border-color: green;
+}
+#demograph > table > thead {
+    background-color: #1EA69A;
+    color: white;
+    font-weight: bold;
+}
+td {
+    height: 25px;
+}
+#demograph > p {
+    margin-top: 15px;
+}
+
+/* photos ville */
+
+#pics {
+    display: flex;
+    width: 700px;
+    margin: auto;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+}
+#pics > div {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px
+}
+#pics > div > img {
+    height: 150px;
+}
+
+/* groupe local */
+
+#localband {
+    height: 350px;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+/* footer */
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 790px) {
+    #demograph > table {
+        width: 474px;
+    }
+    #pics {
+        width: 100%;
+        display: flex;
+    }
+}
+@media only screen and (max-width: 605px) {
+    #pics {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+
+    }
+    #localband, #localvid {
+        width: 100vw;
+    }
+}
