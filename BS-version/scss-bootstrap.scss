@@ -1,0 +1,106 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.separator {
+    width: 75vw;
+    border-top: 2px solid #1EA69A;
+    margin: 25px auto;
+}
+
+// header
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(../assets/city.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 125px;
+    margin: 70px 0 25px 0;
+    & h1 {
+        color: white;
+        text-shadow: #000 1px 0 10px;
+    }
+}
+
+// preface
+
+#preface {
+    width: 70vw;
+    line-height: 1.75;
+    & img {
+        float: right;
+        margin: 0 0 20px 45px;
+    }
+}
+
+// info
+
+#info {
+    & p {
+        margin-bottom: 15px;
+        text-indent: 15px;
+        line-height: 1.5;
+    }
+    & p::first-letter {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+}
+
+// video
+
+#localvid {
+    & p {
+        margin-top: 15px;
+        font-size: 1.2em;
+    }
+}
+
+// population
+
+#demograph {
+    & table {
+        text-align: center;
+        & th {
+            text-align: center;
+        }
+    }
+    & p {
+        font-size: 1.1em;
+    }
+}
+
+// carousel
+
+.carousel {
+    margin: auto;
+    width: 300px;
+}
+
+// local band
+
+#localband {
+    & p {
+        margin-top: 15px;
+        font-size: 1.2em;
+    }
+}
+
+// footer
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 11px;
+}
