@@ -42,8 +42,14 @@ header > a {
     font-weight: bold;
     color: #1EA69A;
 }
+header > a:hover {
+    text-decoration: none;
+    color: #1EA69A;
+    transform: translateY(1px);
+}
 header > a:active {
     background-color: #1EA69A;
+    text-decoration: none;
     color: white;
 }
 header > a > img {
@@ -57,7 +63,7 @@ nav {
     margin-left: 10vw;
     padding: 15px;
 }
-nav > ol > li > a {
+nav > ul > li > a {
     text-decoration: none;
     color: #1EA69A;
 }
@@ -72,7 +78,7 @@ nav > ol > li > a {
 #preface > p {
     line-height: 1.5;
 }
-#preface > img {
+#preface > #float-meaux {
     float: right;
     height: 150px;
     margin-left: 50px;
