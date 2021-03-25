@@ -19,7 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url(../assets/city.jpg) no-repeat center;
+  background: url(../../assets/city.jpg) no-repeat center;
   background-size: cover;
   border-radius: 10px;
   height: 125px;
